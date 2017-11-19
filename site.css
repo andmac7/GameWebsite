@@ -22,6 +22,7 @@
 
 #welcome{
     background-color:#A6A2A2;
+    padding-top: 58px;
 }
 #news{
     background-color:#CFD2CD;
@@ -36,7 +37,7 @@
     background-color:#A6A2A2;
 }
 
-#title{
+#title img{
 }
 
 .card{
