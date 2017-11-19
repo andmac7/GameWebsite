@@ -1,26 +1,42 @@
 function init() {
+    var sep = "col-md-3";
+    var menu =
+    "<div class='row'>"+
+
+    "<div onclick='scrollTo(#status-message)' class='menu-item "+sep+"'>.news</div>"+
+    "<div onclick='scrollTo()' class='menu-item "+sep+"'>.games</div>"+
+    "<div onclick='scrollTo()' class='menu-item "+sep+"'>.about</div>"+
+    "<div onclick='scrollTo()' class='menu-item "+sep+"'>.contact</div>"+
+    
+    "</div>";
+
+
+
     $("#status-message").hide();
     $("#status-message").click(function(){
         equalize();
     });
-    /*$.ajax ({
-        type: "GET",
-        url: "http://localhost:8080/test",
-        success: function(){
-            alert("Worked!");
-        },
-        error: function(msg){
-            alert("Nope lol");
-        }
-    });*/
+    //wait until the dom is loaded
+    $(document).ready(function () {
+        //adds menu.html content into any "#menu" element
+        $('#menu-items').html(menu);
+    });
+}
+
+function scrollTo(elmnt){
+    $(window).load(function() {
+        $("html, body").animate({ scrollTop: $(elmnt).scrollTop() }, 1000);        
+    });
+      console.log("scrolled");
 }
 
 function save_data() {
     var data = $("#txt-user-input")[0].value;
     if (data !== "") {
-        success_msg("Thank you for your submission!");
+        
+        success_msg("Thank you for your message! :)");
     } else {
-        error_msg("You need to provide data.");
+        error_msg("You need to write something.");
     }
 }
 

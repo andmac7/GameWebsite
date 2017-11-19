@@ -1,5 +1,52 @@
+#section-welcome{
+    background-color: #eeffcc;
+}
+
+#section-news{
+    background-color: white;
+}
+
+#section-games{
+    background-color: #eeffcc;
+}
+
+#section-about{
+    background-color: white;
+}
+
+#section-contact{
+    background-color: #eeffcc;
+}
+
+.textbody-title{
+    font-size:30px;
+}
+
+.textbody-text{
+    font-size:16px;
+}
+
+.textbody{
+    padding: 15px 380px;
+}
+
 .label-instruction {
     text-align: -webkit-center;
+}
+
+#menu {
+    background-color: #eeffcc;
+}
+
+#menu-items{
+    margin: auto;
+    max-width: 600px;
+    text-align: -webkit-center;
+}
+
+.menu-item {
+    width:auto;
+    font-size: 32px;
 }
 
 #txt-user-input {
@@ -46,4 +93,8 @@ label#txt-status-message {
 .status-green {
     color:white;
     background-color:lightgreen;
+}
+
+.row {
+    margin: 0px;
 }

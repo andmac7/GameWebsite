@@ -8,29 +8,93 @@
         <script type="text/javascript" src="./resources/d3/d3.js"></script>
         <script type="text/javascript" src="./resources/jquery/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="./resources/handlebars/handlebars-v4.0.10.js"></script>
-        <!-- <script type="text/javascript" src="./resources/js/bootstrap.js"></script> // Requires "Popper.js" -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div class="row">
+        <div id="menu">  
+            <div id="menu-items">
+            </div>      
+        </div>
+        <div class="row">     
             <div class="col-md-12">
                 <div class="wrapper">
-                    <div id="title">
-                        <h1 id="label-title">PAGE TITLE</h1>
-                    </div>
-                    <div id="status-message" class="label-instruction">
+                    <!--<div id="status-message" class="label-instruction">
                         <label id="txt-status-message"></label>
                         <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                    </div>-->
+
+                    <!-- WELCOME -->
+                    <div id="section-welcome">
+                    <div class="textbody">
+                        <div class="textbody-title">
+                            init(".welcome!");
+                        </div>
+                        <div class="textbody-text">
+                            So the website is up and running, who would have thought. Here you can find most anything I'll post about my progress in various projects, mostly game related. Get comfy, explore and enjoy!
+                        </div>
+                    </div>
                     </div>
 
-                    <h2 class="label-instruction">Enter data to be saved:</h2>
-                    <textarea id="txt-user-input"></textarea>
-                    <button class="btn btn-primary btn-lg" id="btn-user-input" onclick="save_data()">Send</button>
+                    <!-- NEWS -->
+                    <div id="section-news">
+                    <div id="title">
+                        <h1 id="label-title">.news</h1>
+                    </div>
+                    <div class="textbody">
+                        <div class="textbody-title">
+                            Nothing here yet!
+                        </div>
+                        <div class="textbody-text">
+
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- GAMES -->
+                    <div id="section-games">
+                    <div id="title">
+                        <h1 id="label-title">.games</h1>
+                    </div>
+                    <div class="textbody">
+                        <div class="textbody-title">
+                            Stealth Project
+                        </div>
+                        <div class="textbody-text">
+                            This is the project I am currently working on, and have worked on for a while. After years of not finishing anything other than game jam entries, and endless prototyping,
+                            I am now doing what might amount to the most idiotic thing of all - making something I really want to make, with a large scope! My entire life I've been in love with stealth
+                            games, with Metal Gear Solid being the main receiver of that love.<br/><br/>
+                            
+                            Since then stealth games have evolved by incorporating player choices, making a lot of the stealth gameplay
+                            fall behind more meaty action. The newer Deus Ex games, for example, could be played entirely as shooters. In Hitman, the player can get out of a messy situation by pulling out
+                            a huge automatic rifle and blowing the enemies to bits. As I understand it this is done not entirely in the name of player freedom, but for accessibility. Stealth games are a niche
+                            genré, and can be very off putting for players that don't enjoy the time it takes to progress through a level.<br/><br/>
+
+                            The main focus of this game project is to create a stealth game that is faster, with smaller chunk sized levels that allows for a lot of creativity - all in the name of avoiding
+                            violence and killing. I want to make a game that doesn't wave the violence in front of the player, but still being quite action oriented. I draw influences from Metal Gear Solid,
+                            Deus Ex, Thief and Dishonored - and I hope to show you more soon.
+                        </div>
+                    </div>
+                    </div>
+                    <!-- ABOUT -->
+                    <div id="section-about">
+                    <div id="title">
+                        <h1 id="label-title">.about</h1>
+                    </div>
+                    <div class="textbody">
+                        <div class="textbody-title">
+                        </div>
+                        <div class="textbody-text">
+                            My name is Andreas, and I'm a programmer. In my spare time I make games because I have a passion for it. I'm based in the south of Sweden and I mainly (almost exclusively) work
+                            in GameMaker Studio 1.4 and 2.
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
     </body>
     <footer>
-            <h2 id="txt-footer" class="label-instruction">©2017</h2>
+            <h2 id="txt-footer" class="label-instruction">written by Andreas Macsotay ©2017</h2>
     </footer>
     <script type="text/javascript">
         init();

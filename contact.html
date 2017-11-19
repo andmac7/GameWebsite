@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="./resources/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="./resources/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="./style.css">
+        <script type="text/javascript" src="./resources/utils.js"></script>
+        <script type="text/javascript" src="./resources/d3/d3.js"></script>
+        <script type="text/javascript" src="./resources/jquery/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="./resources/handlebars/handlebars-v4.0.10.js"></script>
+        <!-- <script type="text/javascript" src="./resources/js/bootstrap.js"></script> // Requires "Popper.js" -->
+    </head>
+    <body>
+        <div class="row">
+            <!--#include file="menu.html"-->          
+            <div class="col-md-12">
+                <div class="wrapper">
+                    <div id="title">
+                        <h1 id="label-title">CONTACT</h1>
+                    </div>
+                    <div id="status-message" class="label-instruction">
+                        <label id="txt-status-message"></label>
+                        <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                    </div>
+
+                    <h2 class="label-instruction">Enter message:</h2>
+                    <textarea id="txt-user-input"></textarea>
+                    <button class="btn btn-primary btn-lg" id="btn-user-input" onclick="save_data()">Send</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+            <h2 id="txt-footer" class="label-instruction">written by Andreas Macsotay ©2017</h2>
+    </footer>
+    <script type="text/javascript">
+        init();
+    </script>
+</html>
